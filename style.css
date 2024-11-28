@@ -1,0 +1,141 @@
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.box {
+  padding: 1px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+.bigBox {
+  align-items: center;
+  width: 22.5%;
+}
+
+#container,
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container {
+  justify-content: space-between;
+  margin: 2%;
+}
+
+#nav {
+  margin: 1%;
+  justify-content: center;
+}
+
+a {
+  border-radius: 5px;
+  margin: 1%;
+  background-color: #B3EBF2;
+  color: black;
+  padding: 1em;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 15px;
+  padding: 5%;
+  margin: 0 0 2%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#aboutMeImage {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+#summary {
+  margin: 0% 5% 0% 5%;
+  font-size: 20px;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 2%;
+  margin: 2% 0 2%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+header,
+footer,
+a {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header,
+footer,
+#summary,
+h1,
+.box {
+  text-align: center;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 1%;
+  margin: 2% 0 2%;
+  font-size: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width: 700px) {
+  div#top {
+    flex-direction: column;
+  }
+
+  div#container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .bigBox {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #top {
+    order: 1;
+  }
+
+  #bigBox {
+    order: 2;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  .bigBox {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .bigBox {
+    width: 22.5%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
