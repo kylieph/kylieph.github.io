@@ -103,4 +103,18 @@
   <footer style="background-color:#FFDBBB"> Created by Kylie Phommasack </footer>
 </body>
 
+<script>
+  const buttons = document.querySelectorAll('a');
+  buttons.forEach(button => {
+    button.onmouseover = function() {
+      button.style.backgroundColor = 'darkblue';
+      button.style.color = 'white';           
+    };
+    button.onmouseout = function() {
+      button.style.backgroundColor = '';       
+      button.style.color = '';             
+    };
+  });
+</script>
+
 </html>
