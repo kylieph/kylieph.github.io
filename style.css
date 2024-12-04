@@ -16,7 +16,14 @@
 .bigBox {
   align-items: center;
   width: 22.5%;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
+
+.bigBox:hover {
+  width: 200px;
+  height: 200px;
 
 #container,
 #nav {
