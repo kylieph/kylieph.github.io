@@ -2,6 +2,11 @@
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+#nav a:hover {
+      background-color: darkblue;
+      color: white;
+}
+
 .box {
   padding: 1px;
   margin-bottom: 10px;
