@@ -16,14 +16,12 @@
 .bigBox {
   align-items: center;
   width: 22.5%;
-  transition-property: width, height;
-  transition-duration: 1s;
-  transition-timing-function: ease;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
 }
 
 .bigBox:hover {
-  width: 25%;
-  padding: 20px;
+  transform: scale(1.1);
 }
 
 #container,
