@@ -25,6 +25,20 @@
   <footer style="background-color:#DDF2D1"> Created by Kylie Phommasack </footer>
 </body>
 
+<script>
+  const buttons = document.querySelectorAll('a');
+  buttons.forEach(button => {
+    button.onmouseover = function() {
+      button.style.backgroundColor = 'darkblue';
+      button.style.color = 'white';           
+    };
+    button.onmouseout = function() {
+      button.style.backgroundColor = '';       
+      button.style.color = '';             
+    };
+  });
+</script>
+  
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </html>
