@@ -16,8 +16,8 @@
   </header>
 
    <nav id="nav" class="text-center">
-      <a style="nav-link text-black" href="bulletjournaling.html" tabindex="2">Bullet Journaling Work</a>
-      <a style="nav-link text-black" href="stationery.html" tabindex="3">Stationery Collection</a>
+      <a style="text-black" href="bulletjournaling.html" tabindex="2">Bullet Journaling Work</a>
+      <a style="ext-black" href="stationery.html" tabindex="3">Stationery Collection</a>
   </nav>
 
   <main id="summary" tabindex="4">
@@ -37,22 +37,22 @@
   <footer class="text-center" style="background-color:#DDF2D1" tabindex="6">
     Created by Kylie Phommasack
   </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('a');
+    buttons.forEach(button => {
+      button.onmouseover = function() {
+        button.style.backgroundColor = 'darkblue';
+        button.style.color = 'white';           
+      };
+      button.onmouseout = function() {
+        button.style.backgroundColor = '';       
+        button.style.color = '';             
+      };
+    });
+  </script>
+  
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> 
 </body>
-
-<script>
-  const buttons = document.querySelectorAll('a');
-  buttons.forEach(button => {
-    button.onmouseover = function() {
-      button.style.backgroundColor = 'darkblue';
-      button.style.color = 'white';           
-    };
-    button.onmouseout = function() {
-      button.style.backgroundColor = '';       
-      button.style.color = '';             
-    };
-  });
-</script>
-
-<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>  
 
 </html>
