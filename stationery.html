@@ -11,61 +11,65 @@
 
 <body>
   <div id="top">
-    <header class="text-center py-3" style="background-color:#FFD1DC">Stationery Collection</header>
+    <!-- Header with tabindex -->
+    <header class="text-center py-3" style="background-color:#FFD1DC" tabindex="1">
+      Stationery Collection
+    </header>
+    
+    <!-- Navigation with tabindex -->
     <nav id="nav">
-      <a href="index.html">Homepage</a>
-      <a href="bulletjournaling.html">Bullet Journaling Work</a>
+      <a href="index.html" tabindex="2">Homepage</a>
+      <a href="bulletjournaling.html" tabindex="3">Bullet Journaling Work</a>
     </nav>
-    <div id="summary">
+    
+    <!-- Summary with tabindex -->
+    <div id="summary" tabindex="4">
       <p>Well this is embarrassing! Here is some of my <b class="text-danger">FAVORITE</b> stationery items. These 
         items are essential to my collection and I practically use these every single day.
         Take a look at some of the stationery items and be inspired. Happy creating!
       </p>
     </div>
   </div>
+
   <main id="container">
-    <section class="bigBox">
+    <!-- Stationery sections with tabindex -->
+    <section class="bigBox" tabindex="5">
       <div class="box" style="background-color:#DDF2D1;">
         <h3 class="fw-bold text-center">Pentel Energel 0.5mm - Black</h3>
-        <p class="text-center">My go to pen</p>
+        <p class="text-center">My go-to pen</p>
       </div>
-      <img src="/Images/PentelPen.jpg" alt="Displays the pentel pen.">
-      <div class="box text-center" style="background-color:#DDF2D1;">
-        <p> </p>
-      </div>
+      <img src="/Images/PentelPen.jpg" alt="Displays the pentel pen." tabindex="6">
     </section>
-    <section class="bigBox">
+
+    <section class="bigBox" tabindex="7">
       <div class="box" style="background-color:#FFDBBB;">
         <h3 class="fw-bold text-center">Tombow Fudenosuke Hard Tip</h3>
         <p class="text-center">Best brush pen ever.</p>
       </div>
-      <img src="/Images/Fudenosuke.jpg" alt="Displays the tombow fudenosuke brush pen.">
-      <div class="box" style="background-color:#FFDBBB;">
-        <p> </p>
-      </div>
+      <img src="/Images/Fudenosuke.jpg" alt="Displays the tombow fudenosuke brush pen." tabindex="8">
     </section>
-    <section class="bigBox">
+
+    <section class="bigBox" tabindex="9">
       <div class="box" style="background-color:#FFD1DC;">
         <h3 class="fw-bold text-center">Tombow Dual Tip Brush Pen</h3>
         <p class="text-center">My favorite one is 192 - Asparagus</p>
       </div>
-      <img src="/Images/Asparagus.jpg" alt="Displays the tombow dual green (asparagus color) brush pen">
-      <div class="box" style="background-color:#FFD1DC;">
-        <p> </p>
-      </div>
+      <img src="/Images/Asparagus.jpg" alt="Displays the tombow dual green (asparagus color) brush pen." tabindex="10">
     </section>
-    <section class="bigBox">
+
+    <section class="bigBox" tabindex="11">
       <div class="box" style="background-color:#FEE7AA;">
         <h3 class="fw-bold text-center">Gray Zebra Mildliner Brush Pen</h3>
         <p class="text-center">Best for creating shadows!</p>
       </div>
-      <img src="/Images/Mildliner.jpg" alt="Displays the gray zebra mildliner brush marker.">
-      <div class="box" style="background-color:#FEE7AA;">
-        <p> </p>
-      </div>
+      <img src="/Images/Mildliner.jpg" alt="Displays the gray zebra mildliner brush marker." tabindex="12">
     </section>
   </main>
-  <footer class="text-center" style="background-color:#FFD1DC"> Created by Kylie Phommasack </footer>
+
+  <!-- Footer with tabindex -->
+  <footer class="text-center" style="background-color:#FFD1DC" tabindex="13">
+    Created by Kylie Phommasack
+  </footer>
 </body>
 
 <script>
