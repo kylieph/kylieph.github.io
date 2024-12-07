@@ -94,22 +94,22 @@
   <footer class="text-center" style="background-color:#FFDBBB" tabindex="21">
     Created by Kylie Phommasack
   </footer>
+  
+  <script>
+    const buttons = document.querySelectorAll('a');
+    buttons.forEach(button => {
+      button.onmouseover = function() {
+        button.style.backgroundColor = 'darkblue';
+        button.style.color = 'white';           
+      };
+      button.onmouseout = function() {
+        button.style.backgroundColor = '';       
+        button.style.color = '';             
+      };
+    });
+  </script>
+  
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<script>
-  const buttons = document.querySelectorAll('a');
-  buttons.forEach(button => {
-    button.onmouseover = function() {
-      button.style.backgroundColor = 'darkblue';
-      button.style.color = 'white';           
-    };
-    button.onmouseout = function() {
-      button.style.backgroundColor = '';       
-      button.style.color = '';             
-    };
-  });
-</script>
-
-<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-
+  
 </html>
